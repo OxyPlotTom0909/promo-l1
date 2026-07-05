@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Vision Storybook</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#page-1" aria-label="Travel Vision Storybook">
+        <span class="brand-mark">AI</span>
+        <span data-i18n="brand">即刻旅行故事書</span>
+      </a>
+
+      <nav class="language-switcher" aria-label="Language selector">
+        <button class="lang-button is-active" type="button" data-lang="zh">繁中</button>
+        <button class="lang-button" type="button" data-lang="ja">日本語</button>
+        <button class="lang-button" type="button" data-lang="en">English</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="book-shell" aria-label="Story pages">
+        <div class="book-track" tabindex="0">
+          <article class="book-page is-hero" id="page-1">
+            <figure class="story-visual">
+              <img src="assets/images/ex1_1.png" alt="" data-i18n-alt="page1Alt" />
+            </figure>
+            <div class="story-copy">
+              <p class="page-number">01 / 04</p>
+              <h2 data-i18n="page1Title">旅行中的好奇心</h2>
+              <p data-i18n="page1Body">
+                我是一個喜歡到處旅遊的上班族，體驗各地文化與人事物，是我工作之餘最享受生活的時光。
+              </p>
+            </div>
+          </article>
+
+          <article class="book-page" id="page-2">
+            <figure class="story-visual">
+              <img src="assets/images/ex1_2.png" alt="" data-i18n-alt="page2Alt" />
+            </figure>
+            <div class="story-copy">
+              <p class="page-number">02 / 04</p>
+              <h2 data-i18n="page2Title">總是差一點深入</h2>
+              <p data-i18n="page2Body">
+                但是到了每個景點，總覺得都是在走馬看花。每次都要在出發前做很多功課、上網查資料，才會知道眼前景點或人事物的關聯。這樣不但累，也總覺得沒有效率。
+              </p>
+            </div>
+          </article>
+
+          <article class="book-page" id="page-3">
+            <figure class="story-visual">
+              <img src="assets/images/ex1_3.png" alt="" data-i18n-alt="page3Alt" />
+            </figure>
+            <div class="story-copy">
+              <p class="page-number">03 / 04</p>
+              <h2 data-i18n="page3Title">眼前就是導覽現場</h2>
+              <p data-i18n="page3Body">
+                如果可以配合 AI 眼鏡，將我看到的人、事、物，直接透過眼鏡顯示模擬場景影片與即時查詢到的說明，並即時講解，我就能立刻理解眼前的展覽、建築與景點。
+              </p>
+            </div>
+          </article>
+
+          <article class="book-page" id="page-4">
+            <figure class="story-visual">
+              <img src="assets/images/ex1_4.png" alt="" data-i18n-alt="page4Alt" />
+            </figure>
+            <div class="story-copy">
+              <p class="page-number">04 / 04</p>
+              <h2 data-i18n="page4Title">更輕鬆自在的旅程</h2>
+              <p data-i18n="page4Body">
+                實現這樣的功能後，我在旅行中能更完整地體驗每一段旅程。想看展覽就看展覽，想逛老街就逛老街，旅行變得輕鬆、放鬆又自在。
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <div class="book-controls" aria-label="Story navigation">
+          <button class="nav-button" type="button" data-direction="prev" aria-label="Previous page">
+            <span aria-hidden="true">&#8249;</span>
+          </button>
+          <div class="page-dots" aria-label="Page selection">
+            <button class="dot is-active" type="button" data-page="0" aria-label="Go to page 1"></button>
+            <button class="dot" type="button" data-page="1" aria-label="Go to page 2"></button>
+            <button class="dot" type="button" data-page="2" aria-label="Go to page 3"></button>
+            <button class="dot" type="button" data-page="3" aria-label="Go to page 4"></button>
+          </div>
+          <button class="nav-button" type="button" data-direction="next" aria-label="Next page">
+            <span aria-hidden="true">&#8250;</span>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
